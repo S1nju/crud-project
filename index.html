@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", type="text/css", href="./css/styles.css">
+    <title>online shop</title>
+</head>
+<body>
+    <head class="head">
+        <h1>online shop project</h1>
+        <h3>test</h3>
+    </head>
+    <main class="main">
+        <div id="mainth">
+        <input type="text" id="title" placeholder="product title">
+        <input type="text"id="desc" placeholder="product desc">
+       
+        <div id="priceinput">
+            <input type="text" onkeyup="gettotal();" id="price" placeholder="price">
+            <input type="text" onkeyup="gettotal();" id="tax"  placeholder="tax">
+            <input type="text"  onkeyup="gettotal();"id="ads"  placeholder="ads">
+            <input type="text"  onkeyup="gettotal();"id="dis"  placeholder="discount">
+            <span id="tot">Total: 0 Da</span>
+          
+        </div>
+        <input type="text" id="count" placeholder="count">
+        <input type="text" id="catg" placeholder="catg">
+        <button id="saveinfo">save</button>
+        <div id="search">
+            <input onkeyup="searchf(value)" id="searchi" type="text" id="search" placeholder="search">
+            <button id="searcht">search by title</button>
+            <button id="searchc">search by catg</button>
+     <div id="table2">
+        <div id="dall">1</div>
+
+        <table >
+
+        <thead>
+            <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>qty</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>catg</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr> </thead>
+        <tbody id="table">
+       </tbody>
+       
+        </table>
+     </div>
+    </main>
+    <footer></footer>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
